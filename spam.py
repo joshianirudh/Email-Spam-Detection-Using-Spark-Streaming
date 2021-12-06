@@ -32,7 +32,7 @@ def split_batches(df):
                 spam_list.append(0)
             ap={'id':i,'text':text}
             data_frame.append(ap)
-        data_frame=session.createDataFrame(data_frame,schema=my_schema)
+        data_frame=spark.createDataFrame(data_frame,schema=my_schema)
     #proc_data_frame=process_data_frame(data_frame,spam_list) #anirudh
     # classifiers, Jaywanth
     
